@@ -25,14 +25,13 @@ conda install -y numpy
 # pytorch with cuda80/cuda90 is tested
 conda install -y pytorch=0.4.1 torchvision cuda90 -c pytorch
 # opencv
-pip install opencv-python
+pip install opencv-python==4.5.5.64
 # tensorboardX
 
 echo "***** install other libs *****"
 pip install tensorboardX
 # libs
-pip install pyyaml yacs tqdm colorama matplotlib cython
-
+pip install pyyaml yacs tqdm colorama matplotlib cython==0.29.21
 
 echo "***** build extensions *****"
 python setup.py build_ext --inplace
